@@ -1,0 +1,10 @@
+---
+- hosts: all
+
+
+  tasks:
+  - name: building docker image
+    command: "docker build -t simple_devops_image ."
+    args:
+      chdir: /opt/docker
+          
